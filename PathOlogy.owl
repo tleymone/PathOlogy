@@ -1,0 +1,1359 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3">
+    <Prefix name="" IRI="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.w3.org/2004/02/skos/core</Import>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ressource/Anomalie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#blessure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#maladie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#technique_imagerie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#tumeur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Douleur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Extérieur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gêne_respiratoire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rejet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptômes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Toux"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estSituéDans"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estUnSymptômeDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#faitPartieDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#peutDétecter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#peutEntrainerCommmeComplication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#peutÊtreDétectéPar"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CIM-10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.loterre.fr/ark:/67375/TSP-B3V5B10M-Q"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.loterre.fr/ark:/67375/TSP-CL83J42S-3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.loterre.fr/ark:/67375/TSP-LC51JBX4-7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.loterre.fr/ark:/67375/TSP-N3NN6QLV-2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.loterre.fr/ark:/67375/TSP-QC7LGLCZ-S"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.loterre.fr/ark:/67375/TSP-QSB45XVR-H"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://data.loterre.fr/ark:/67375/TSP-R7G7F5HB-W"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/cavernes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/infiltrats"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/nodule"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/paroie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/poumon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/region"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/trachée"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Adénocarcinome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Contusion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Coqueluche"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Mésothéliome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Pneumothorax"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Tuberculose"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Amaigrissement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Apnée"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Artère_pulmonaire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cyanose"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Douleur_pleurétique"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Douleur_thoracique"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dyspnée"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Détresse_respiratoire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Embolie_pulmonaire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Epanchement_pleural"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fatigue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fièvre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hémoptysies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hémothorax"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oedème_pulmonaire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Plèvre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pneumonie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rhinorrhée"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tachycardie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tachypnée"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Toux"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Toux_grasse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Toux_sèche"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vomissement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#alveole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bronche"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lobe_inférieur"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lobe_moyen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lobe_supérieur"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#parenchyme_pulmonaire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#scanner"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Douleur_à_l&apos;épaule"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/Adénocarcinome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/Contusion_pulmonaire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/Coqueluche"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/Détresse_respiratoire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/Embolie_pulmonaire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/Hémothorax"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/Mésothéliome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/Oedème_aigu_du_poumon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/Pneumonie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/Pneumothorax"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/Tuberculose"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/cyanose"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/vomissement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/Épanchement_pleural"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ressource/Anomalie"/>
+        <Class IRI="#Symptômes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#blessure"/>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#maladie"/>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#tumeur"/>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Douleur"/>
+        <Class IRI="#Symptômes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Extérieur"/>
+        <Class IRI="#Symptômes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gêne_respiratoire"/>
+        <Class IRI="#Symptômes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rejet"/>
+        <Class IRI="#Symptômes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Toux"/>
+        <Class IRI="#Symptômes"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ressource/Anomalie"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/cavernes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ressource/Anomalie"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/infiltrats"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://dbpedia.org/ressource/Anomalie"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/nodule"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/paroie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/poumon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/region"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/trachée"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#tumeur"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Adénocarcinome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#blessure"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Contusion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#maladie"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Coqueluche"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#tumeur"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Mésothéliome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#blessure"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Pneumothorax"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#maladie"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Tuberculose"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Extérieur"/>
+        <NamedIndividual IRI="#Amaigrissement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gêne_respiratoire"/>
+        <NamedIndividual IRI="#Apnée"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <NamedIndividual IRI="#Artère_pulmonaire"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Extérieur"/>
+        <NamedIndividual IRI="#Cyanose"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Douleur"/>
+        <NamedIndividual IRI="#Douleur_pleurétique"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Douleur"/>
+        <NamedIndividual IRI="#Douleur_thoracique"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gêne_respiratoire"/>
+        <NamedIndividual IRI="#Dyspnée"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#maladie"/>
+        <NamedIndividual IRI="#Détresse_respiratoire"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#maladie"/>
+        <NamedIndividual IRI="#Embolie_pulmonaire"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#blessure"/>
+        <NamedIndividual IRI="#Epanchement_pleural"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptômes"/>
+        <NamedIndividual IRI="#Fatigue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Douleur"/>
+        <NamedIndividual IRI="#Fièvre"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rejet"/>
+        <NamedIndividual IRI="#Hémoptysies"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#maladie"/>
+        <NamedIndividual IRI="#Hémothorax"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#maladie"/>
+        <NamedIndividual IRI="#Oedème_pulmonaire"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <NamedIndividual IRI="#Plèvre"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#maladie"/>
+        <NamedIndividual IRI="#Pneumonie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rejet"/>
+        <NamedIndividual IRI="#Rhinorrhée"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptômes"/>
+        <NamedIndividual IRI="#Tachycardie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gêne_respiratoire"/>
+        <NamedIndividual IRI="#Tachypnée"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Toux"/>
+        <NamedIndividual IRI="#Toux"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Toux"/>
+        <NamedIndividual IRI="#Toux_grasse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Toux"/>
+        <NamedIndividual IRI="#Toux_sèche"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rejet"/>
+        <NamedIndividual IRI="#Vomissement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <NamedIndividual IRI="#alveole"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <NamedIndividual IRI="#bronche"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <NamedIndividual IRI="#lobe_inférieur"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <NamedIndividual IRI="#lobe_moyen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <NamedIndividual IRI="#lobe_supérieur"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <NamedIndividual IRI="#parenchyme_pulmonaire"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#technique_imagerie"/>
+        <NamedIndividual IRI="#scanner"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Douleur"/>
+        <NamedIndividual IRI="#Douleur_à_l&apos;épaule"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="http://data.loterre.fr/ark:/67375/TSP-CL83J42S-3"/>
+        <NamedIndividual IRI="#Fatigue"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://data.loterre.fr/ark:/67375/TSP-LC51JBX4-7"/>
+        <NamedIndividual IRI="#Toux"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://data.loterre.fr/ark:/67375/TSP-N3NN6QLV-2"/>
+        <NamedIndividual IRI="#Apnée"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://data.loterre.fr/ark:/67375/TSP-QC7LGLCZ-S"/>
+        <NamedIndividual IRI="#Amaigrissement"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://data.loterre.fr/ark:/67375/TSP-QSB45XVR-H"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/infiltrats"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://data.loterre.fr/ark:/67375/TSP-R7G7F5HB-W"/>
+        <NamedIndividual IRI="#Fièvre"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Adénocarcinome"/>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/Adénocarcinome"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Contusion"/>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/Contusion_pulmonaire"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Coqueluche"/>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/Coqueluche"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Pneumothorax"/>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/Pneumothorax"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Tuberculose"/>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/Tuberculose"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Cyanose"/>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/cyanose"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Détresse_respiratoire"/>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/Détresse_respiratoire"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Embolie_pulmonaire"/>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/Embolie_pulmonaire"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Epanchement_pleural"/>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/Épanchement_pleural"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Hémothorax"/>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/Hémothorax"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Oedème_pulmonaire"/>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/Oedème_aigu_du_poumon"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Pneumonie"/>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/Pneumonie"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Vomissement"/>
+        <NamedIndividual IRI="https://fr.wikipedia.org/wiki/vomissement"/>
+    </SameIndividual>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#inScheme"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/paroie"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/region"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/poumon"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/region"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#inScheme"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/trachée"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/region"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Adénocarcinome"/>
+        <NamedIndividual IRI="#Amaigrissement"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Adénocarcinome"/>
+        <NamedIndividual IRI="#Fatigue"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#peutÊtreDétectéPar"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Adénocarcinome"/>
+        <NamedIndividual IRI="#scanner"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Contusion"/>
+        <NamedIndividual IRI="#Dyspnée"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Contusion"/>
+        <NamedIndividual IRI="#Hémoptysies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Contusion"/>
+        <NamedIndividual IRI="#Toux"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estSituéDans"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Contusion"/>
+        <NamedIndividual IRI="#parenchyme_pulmonaire"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#peutEntrainerCommmeComplication"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Contusion"/>
+        <NamedIndividual IRI="#Détresse_respiratoire"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#peutÊtreDétectéPar"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Contusion"/>
+        <NamedIndividual IRI="#scanner"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Coqueluche"/>
+        <NamedIndividual IRI="#Apnée"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Coqueluche"/>
+        <NamedIndividual IRI="#Fatigue"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Coqueluche"/>
+        <NamedIndividual IRI="#Fièvre"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Coqueluche"/>
+        <NamedIndividual IRI="#Rhinorrhée"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Coqueluche"/>
+        <NamedIndividual IRI="#Vomissement"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Mésothéliome"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/nodule"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Mésothéliome"/>
+        <NamedIndividual IRI="#Amaigrissement"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Mésothéliome"/>
+        <NamedIndividual IRI="#Fatigue"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estSituéDans"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Mésothéliome"/>
+        <NamedIndividual IRI="#Plèvre"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#peutÊtreDétectéPar"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Mésothéliome"/>
+        <NamedIndividual IRI="#scanner"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Pneumothorax"/>
+        <NamedIndividual IRI="#Douleur_pleurétique"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Pneumothorax"/>
+        <NamedIndividual IRI="#Douleur_thoracique"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Pneumothorax"/>
+        <NamedIndividual IRI="#Dyspnée"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Pneumothorax"/>
+        <NamedIndividual IRI="#Douleur_à_l&apos;épaule"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estSituéDans"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Pneumothorax"/>
+        <NamedIndividual IRI="#Plèvre"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#peutÊtreDétectéPar"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Pneumothorax"/>
+        <NamedIndividual IRI="#scanner"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Tuberculose"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/cavernes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Tuberculose"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/infiltrats"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Tuberculose"/>
+        <NamedIndividual IRI="#Amaigrissement"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Tuberculose"/>
+        <NamedIndividual IRI="#Fièvre"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Tuberculose"/>
+        <NamedIndividual IRI="#Hémoptysies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Tuberculose"/>
+        <NamedIndividual IRI="#Toux"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#peutÊtreDétectéPar"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Tuberculose"/>
+        <NamedIndividual IRI="#scanner"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#member"/>
+        <NamedIndividual IRI="#Artère_pulmonaire"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/poumon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="#Détresse_respiratoire"/>
+        <NamedIndividual IRI="#Cyanose"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="#Détresse_respiratoire"/>
+        <NamedIndividual IRI="#Dyspnée"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="#Embolie_pulmonaire"/>
+        <NamedIndividual IRI="#Douleur_thoracique"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="#Embolie_pulmonaire"/>
+        <NamedIndividual IRI="#Dyspnée"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="#Embolie_pulmonaire"/>
+        <NamedIndividual IRI="#Hémoptysies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="#Embolie_pulmonaire"/>
+        <NamedIndividual IRI="#Tachycardie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estSituéDans"/>
+        <NamedIndividual IRI="#Embolie_pulmonaire"/>
+        <NamedIndividual IRI="#Artère_pulmonaire"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="#Hémothorax"/>
+        <NamedIndividual IRI="#Douleur_thoracique"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="#Hémothorax"/>
+        <NamedIndividual IRI="#Dyspnée"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="#Oedème_pulmonaire"/>
+        <NamedIndividual IRI="#Dyspnée"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#member"/>
+        <NamedIndividual IRI="#Plèvre"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/poumon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="#Pneumonie"/>
+        <NamedIndividual IRI="#Dyspnée"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="#Pneumonie"/>
+        <NamedIndividual IRI="#Fièvre"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="#Pneumonie"/>
+        <NamedIndividual IRI="#Hémoptysies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="#Pneumonie"/>
+        <NamedIndividual IRI="#Tachypnée"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <NamedIndividual IRI="#Pneumonie"/>
+        <NamedIndividual IRI="#Toux"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#member"/>
+        <NamedIndividual IRI="#alveole"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/poumon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#member"/>
+        <NamedIndividual IRI="#bronche"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/poumon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#member"/>
+        <NamedIndividual IRI="#lobe_inférieur"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/poumon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#member"/>
+        <NamedIndividual IRI="#lobe_moyen"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/poumon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#member"/>
+        <NamedIndividual IRI="#lobe_supérieur"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/poumon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#member"/>
+        <NamedIndividual IRI="#parenchyme_pulmonaire"/>
+        <NamedIndividual IRI="http://dbpedia.org/ressource/poumon"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CIM-10"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Adénocarcinome"/>
+        <Literal>C34</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CIM-10"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Contusion"/>
+        <Literal>S27.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CIM-10"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Coqueluche"/>
+        <Literal>A37</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CIM-10"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Mésothéliome"/>
+        <Literal>C45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CIM-10"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Pneumothorax"/>
+        <Literal>J93</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CIM-10"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Pneumothorax"/>
+        <Literal>P25.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CIM-10"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Pneumothorax"/>
+        <Literal>S25.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CIM-10"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Tuberculose"/>
+        <Literal>A15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CIM-10"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Tuberculose"/>
+        <Literal>A19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CIM-10"/>
+        <NamedIndividual IRI="#Détresse_respiratoire"/>
+        <Literal>J96.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CIM-10"/>
+        <NamedIndividual IRI="#Embolie_pulmonaire"/>
+        <Literal>I26</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CIM-10"/>
+        <NamedIndividual IRI="#Epanchement_pleural"/>
+        <Literal>J90</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CIM-10"/>
+        <NamedIndividual IRI="#Epanchement_pleural"/>
+        <Literal>J91</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CIM-10"/>
+        <NamedIndividual IRI="#Hémothorax"/>
+        <Literal>J94.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CIM-10"/>
+        <NamedIndividual IRI="#Oedème_pulmonaire"/>
+        <Literal>I50.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CIM-10"/>
+        <NamedIndividual IRI="#Pneumonie"/>
+        <Literal>J12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CIM-10"/>
+        <NamedIndividual IRI="#Pneumonie"/>
+        <Literal>J13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CIM-10"/>
+        <NamedIndividual IRI="#Pneumonie"/>
+        <Literal>J14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CIM-10"/>
+        <NamedIndividual IRI="#Pneumonie"/>
+        <Literal>J15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CIM-10"/>
+        <NamedIndividual IRI="#Pneumonie"/>
+        <Literal>J16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CIM-10"/>
+        <NamedIndividual IRI="#Pneumonie"/>
+        <Literal>J17</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CIM-10"/>
+        <NamedIndividual IRI="#Pneumonie"/>
+        <Literal>J18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CIM-10"/>
+        <NamedIndividual IRI="#Pneumonie"/>
+        <Literal>P23</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <ObjectProperty IRI="#estUnSymptômeDe"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#peutDétecter"/>
+        <ObjectProperty IRI="#peutÊtreDétectéPar"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#estSituéDans"/>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#estUnSymptômeDe"/>
+        <Class IRI="#Symptômes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#faitPartieDe"/>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#peutDétecter"/>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#technique_imagerie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#peutEntrainerCommmeComplication"/>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#peutÊtreDétectéPar"/>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aPourSymptômes"/>
+        <Class IRI="#Symptômes"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estSituéDans"/>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Collection"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estUnSymptômeDe"/>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#peutDétecter"/>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#peutEntrainerCommmeComplication"/>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#peutÊtreDétectéPar"/>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#technique_imagerie"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CIM-10"/>
+        <Class IRI="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#CIM-10"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ressource/Anomalie</IRI>
+        <Literal>Anomalie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ressource/cavernes</IRI>
+        <Literal>Cavernes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ressource/infiltrats</IRI>
+        <Literal>Infiltrats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ressource/nodule</IRI>
+        <Literal>Nodule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ressource/nodule</IRI>
+        <Literal>nodule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ressource/paroie</IRI>
+        <Literal>paroie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ressource/poumon</IRI>
+        <Literal xml:lang="fr">poumon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>http://dbpedia.org/ressource/poumon</IRI>
+        <Literal xml:lang="en">lung</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ressource/region</IRI>
+        <Literal>region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>http://dbpedia.org/ressource/region</IRI>
+        <Literal>anatomie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ressource/trachée</IRI>
+        <Literal>trachée</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Adénocarcinome</IRI>
+        <Literal>Adénocarcinome</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Contusion</IRI>
+        <Literal>Contusion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Coqueluche</IRI>
+        <Literal>Coqueluche</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Mésothéliome</IRI>
+        <Literal>Mésothéliome</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Pneumothorax</IRI>
+        <Literal>Pneumothorax</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Tuberculose</IRI>
+        <Literal xml:lang="en">A primary bacterial infectious disease that is located in lungs, located in lymph nodes, located in pericardium, located in brain, located in pleura or located in gastrointestinal tract, has material basis in Mycobacterium tuberculosis, which is transmitted by droplets released into the air when an infected person coughs or sneezes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Tuberculose</IRI>
+        <Literal xml:lang="fr">Tuberculose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Tuberculose</IRI>
+        <Literal xml:lang="en">Tuberculosis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#blessure</IRI>
+        <Literal>blessure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#maladie</IRI>
+        <Literal>maladie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie</IRI>
+        <Literal>Pathologie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie</IRI>
+        <Literal>pathologie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#technique_imagerie</IRI>
+        <Literal>technique_imagerie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#tumeur</IRI>
+        <Literal>tumeur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Amaigrissement</IRI>
+        <Literal>Amaigrissement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Apnée</IRI>
+        <Literal>Apnée</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Artère_pulmonaire</IRI>
+        <Literal>artère_pulmonaire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cyanose</IRI>
+        <Literal>Cyanose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Douleur</IRI>
+        <Literal>Douleur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Douleur_pleurétique</IRI>
+        <Literal>Douleur_pleurétique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Douleur_thoracique</IRI>
+        <Literal>Douleur_thoracique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dyspnée</IRI>
+        <Literal>Dyspnée</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Détresse_respiratoire</IRI>
+        <Literal>Détresse_respiratoire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Embolie_pulmonaire</IRI>
+        <Literal>Embolie_pulmonaire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Epanchement_pleural</IRI>
+        <Literal>Epanchement_pleural</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Extérieur</IRI>
+        <Literal>Extérieur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Fatigue</IRI>
+        <Literal>fatigue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Fièvre</IRI>
+        <Literal>Fièvre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Fièvre</IRI>
+        <Literal>fièvre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Gêne_respiratoire</IRI>
+        <Literal>Gêne_respiratoire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hémoptysies</IRI>
+        <Literal>Hémoptysies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hémothorax</IRI>
+        <Literal>Hémothorax</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Oedème_pulmonaire</IRI>
+        <Literal>Oedème_pulmonaire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Plèvre</IRI>
+        <Literal>plèvre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Pneumonie</IRI>
+        <Literal>Pneumonie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rejet</IRI>
+        <Literal>Rejet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rhinorrhée</IRI>
+        <Literal>Rhinorrhée</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Symptômes</IRI>
+        <Literal>Symptôme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Tachycardie</IRI>
+        <Literal>Tachycardie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Tachypnée</IRI>
+        <Literal>Tachypnée</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Toux</IRI>
+        <Literal>Toux</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Toux_grasse</IRI>
+        <Literal>Toux_grasse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Toux_sèche</IRI>
+        <Literal>Toux_sèche</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Vomissement</IRI>
+        <Literal>Vomissement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#alveole</IRI>
+        <Literal>alveole</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#bronche</IRI>
+        <Literal>bronche</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lobe_inférieur</IRI>
+        <Literal>lobe_inférieur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lobe_moyen</IRI>
+        <Literal>lobe_moyen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#lobe_supérieur</IRI>
+        <Literal>lobe_supérieur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#parenchyme_pulmonaire</IRI>
+        <Literal>parenchyme_pulmonaire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#scanner</IRI>
+        <Literal>scanner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Douleur_à_l&apos;épaule</IRI>
+        <Literal>Douleur_à_l&apos;épaule</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

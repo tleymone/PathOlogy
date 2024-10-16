@@ -1,0 +1,983 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3"
+     xml:base="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3"
+     xmlns:ns0="http://mysite.org/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dc11="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:isothes="http://purl.org/iso25964/skos-thes#"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3">
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://mysite.org/ns0group -->
+
+    <owl:AnnotationProperty rdf:about="http://mysite.org/ns0group"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#aPourSymptômes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#aPourSymptômes">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#estUnSymptômeDe"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Symptômes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#estSituéDans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#estSituéDans">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#partie_du_poumon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#estUnSymptômeDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#estUnSymptômeDe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Symptômes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#faitPartieDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#faitPartieDe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#partie_du_poumon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#peutDétecter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#peutDétecter">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#peutÊtreDétectéPar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#technique_imagerie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#peutEntrainerCommmeComplication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#peutEntrainerCommmeComplication">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#peutÊtreDétectéPar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#peutÊtreDétectéPar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#technique_imagerie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#CIM-10 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#CIM-10">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ressource/Anomalie -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ressource/Anomalie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Symptômes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/iso25964/skos-thes#ConceptGroup -->
+
+    <owl:Class rdf:about="http://purl.org/iso25964/skos-thes#ConceptGroup"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#blessure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#blessure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#maladie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#maladie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie">
+        <rdfs:label>pathologie</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#technique_imagerie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#technique_imagerie"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#tumeur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#tumeur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#pathologie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Douleur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Douleur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Symptômes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Extérieur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Extérieur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Symptômes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Gêne_respiratoire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Gêne_respiratoire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Symptômes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Rejet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Rejet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Symptômes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Symptômes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Symptômes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Toux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Toux">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Symptômes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#lobes_du_poumon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#lobes_du_poumon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#partie_du_poumon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#organe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#organe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#partie_du_poumon"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#partie_du_poumon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#partie_du_poumon"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.loterre.fr/ark:/67375/TSP -->
+
+    <owl:NamedIndividual rdf:about="http://data.loterre.fr/ark:/67375/TSP">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.loterre.fr/ark:/67375/TSP-BPW7VPRL-2 -->
+
+    <owl:NamedIndividual rdf:about="http://data.loterre.fr/ark:/67375/TSP-BPW7VPRL-2">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://data.loterre.fr/ark:/67375/TSP"/>
+        <skos:member rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3/adénocarcinome"/>
+        <skos:member rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3/mésothéliome"/>
+        <skos:narrower rdf:resource="http://data.loterre.fr/ark:/67375/TSP-VWLF6PNQ-X"/>
+        <skos:narrower rdf:resource="http://data.loterre.fr/ark:/67375/TSP-WNNP9D20-D"/>
+        <skos:related rdf:resource="http://data.loterre.fr/ark:/67375/TSP-W9H1FRZ9-2"/>
+        <ns0:ns0group xml:lang="fr">Pathologie</ns0:ns0group>
+        <dc11:identifier>28_50</dc11:identifier>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-11</terms:modified>
+        <skos:hiddenLabel xml:lang="fr">Tumeur</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="fr">tumeur</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.loterre.fr/ark:/67375/TSP-CTNJXVTF-B -->
+
+    <owl:NamedIndividual rdf:about="http://data.loterre.fr/ark:/67375/TSP-CTNJXVTF-B">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Coqueluche"/>
+        <skos:broader rdf:resource="http://data.loterre.fr/ark:/67375/TSP-QJZNTJL0-X"/>
+        <skos:inScheme rdf:resource="http://data.loterre.fr/ark:/67375/TSP"/>
+        <skos:related rdf:resource="http://data.loterre.fr/ark:/67375/TSP-G104F32J-K"/>
+        <ns0:ns0group xml:lang="fr">Pathologie</ns0:ns0group>
+        <dc11:identifier>28_13_0_6</dc11:identifier>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-11</terms:modified>
+        <skos:hiddenLabel xml:lang="fr">Coqueluche</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="fr">coqueluche</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.loterre.fr/ark:/67375/TSP-FLB3BZRR-0 -->
+
+    <owl:NamedIndividual rdf:about="http://data.loterre.fr/ark:/67375/TSP-FLB3BZRR-0">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Pneumonie"/>
+        <skos:broader rdf:resource="http://data.loterre.fr/ark:/67375/TSP-QJZNTJL0-X"/>
+        <skos:inScheme rdf:resource="http://data.loterre.fr/ark:/67375/TSP"/>
+        <skos:related rdf:resource="http://data.loterre.fr/ark:/67375/TSP-G104F32J-K"/>
+        <ns0:ns0group xml:lang="fr">Pathologie</ns0:ns0group>
+        <dc11:identifier>28_13_0_14</dc11:identifier>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-11</terms:modified>
+        <skos:hiddenLabel xml:lang="fr">Pneumonie</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="fr">pneumonie</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.loterre.fr/ark:/67375/TSP-G104F32J-K -->
+
+    <owl:NamedIndividual rdf:about="http://data.loterre.fr/ark:/67375/TSP-G104F32J-K">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:narrower rdf:resource="http://data.loterre.fr/ark:/67375/TSP-SFNMZ972-0"/>
+        <skos:narrower rdf:resource="http://data.loterre.fr/ark:/67375/TSP-WBV2GMLR-W"/>
+        <skos:related rdf:resource="http://data.loterre.fr/ark:/67375/TSP-CTNJXVTF-B"/>
+        <skos:related rdf:resource="http://data.loterre.fr/ark:/67375/TSP-FLB3BZRR-0"/>
+        <skos:prefLabel xml:lang="fr">pathologie de l&apos;appareil respiratoire</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.loterre.fr/ark:/67375/TSP-KFW171GK-F -->
+
+    <owl:NamedIndividual rdf:about="http://data.loterre.fr/ark:/67375/TSP-KFW171GK-F">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:related rdf:resource="http://data.loterre.fr/ark:/67375/TSP-R8D46S8H-P"/>
+        <skos:prefLabel xml:lang="fr">sanatorium</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.loterre.fr/ark:/67375/TSP-Pathologie -->
+
+    <owl:NamedIndividual rdf:about="http://data.loterre.fr/ark:/67375/TSP-Pathologie">
+        <rdf:type rdf:resource="http://purl.org/iso25964/skos-thes#ConceptGroup"/>
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <skos:member rdf:resource="http://data.loterre.fr/ark:/67375/TSP-BPW7VPRL-2"/>
+        <skos:member rdf:resource="http://data.loterre.fr/ark:/67375/TSP-CTNJXVTF-B"/>
+        <skos:member rdf:resource="http://data.loterre.fr/ark:/67375/TSP-FLB3BZRR-0"/>
+        <skos:member rdf:resource="http://data.loterre.fr/ark:/67375/TSP-R8D46S8H-P"/>
+        <skos:member rdf:resource="http://data.loterre.fr/ark:/67375/TSP-SFNMZ972-0"/>
+        <skos:member rdf:resource="http://data.loterre.fr/ark:/67375/TSP-WBV2GMLR-W"/>
+        <skos:prefLabel xml:lang="fr">Pathologie</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.loterre.fr/ark:/67375/TSP-QJZNTJL0-X -->
+
+    <owl:NamedIndividual rdf:about="http://data.loterre.fr/ark:/67375/TSP-QJZNTJL0-X">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:narrower rdf:resource="http://data.loterre.fr/ark:/67375/TSP-CTNJXVTF-B"/>
+        <skos:narrower rdf:resource="http://data.loterre.fr/ark:/67375/TSP-FLB3BZRR-0"/>
+        <skos:narrower rdf:resource="http://data.loterre.fr/ark:/67375/TSP-R8D46S8H-P"/>
+        <skos:prefLabel xml:lang="fr">bactériose</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.loterre.fr/ark:/67375/TSP-R8D46S8H-P -->
+
+    <owl:NamedIndividual rdf:about="http://data.loterre.fr/ark:/67375/TSP-R8D46S8H-P">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Tuberculose"/>
+        <skos:broader rdf:resource="http://data.loterre.fr/ark:/67375/TSP-QJZNTJL0-X"/>
+        <skos:inScheme rdf:resource="http://data.loterre.fr/ark:/67375/TSP"/>
+        <skos:related rdf:resource="http://data.loterre.fr/ark:/67375/TSP-KFW171GK-F"/>
+        <skos:related rdf:resource="http://data.loterre.fr/ark:/67375/TSP-STH6WVBH-S"/>
+        <ns0:ns0group xml:lang="fr">Pathologie</ns0:ns0group>
+        <dc11:identifier>28_13_0_24</dc11:identifier>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-11</terms:modified>
+        <skos:altLabel xml:lang="fr">infection tuberculeuse</skos:altLabel>
+        <skos:hiddenLabel xml:lang="fr">Infection tuberculeuse</skos:hiddenLabel>
+        <skos:hiddenLabel xml:lang="fr">Primo infection tuberculeuse</skos:hiddenLabel>
+        <skos:hiddenLabel xml:lang="fr">Tuberculose</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="fr">tuberculose</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.loterre.fr/ark:/67375/TSP-SFNMZ972-0 -->
+
+    <owl:NamedIndividual rdf:about="http://data.loterre.fr/ark:/67375/TSP-SFNMZ972-0">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Pneumothorax"/>
+        <skos:broader rdf:resource="http://data.loterre.fr/ark:/67375/TSP-G104F32J-K"/>
+        <skos:inScheme rdf:resource="http://data.loterre.fr/ark:/67375/TSP"/>
+        <ns0:ns0group xml:lang="fr">Pathologie</ns0:ns0group>
+        <dc11:identifier>28_2_13</dc11:identifier>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-11</terms:modified>
+        <skos:hiddenLabel xml:lang="fr">Pneumothorax</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="fr">pneumothorax</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.loterre.fr/ark:/67375/TSP-STH6WVBH-S -->
+
+    <owl:NamedIndividual rdf:about="http://data.loterre.fr/ark:/67375/TSP-STH6WVBH-S">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:related rdf:resource="http://data.loterre.fr/ark:/67375/TSP-R8D46S8H-P"/>
+        <skos:prefLabel xml:lang="fr">BCG</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.loterre.fr/ark:/67375/TSP-VWLF6PNQ-X -->
+
+    <owl:NamedIndividual rdf:about="http://data.loterre.fr/ark:/67375/TSP-VWLF6PNQ-X">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://data.loterre.fr/ark:/67375/TSP-BPW7VPRL-2"/>
+        <skos:prefLabel xml:lang="fr">tumeur bénigne</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.loterre.fr/ark:/67375/TSP-W9H1FRZ9-2 -->
+
+    <owl:NamedIndividual rdf:about="http://data.loterre.fr/ark:/67375/TSP-W9H1FRZ9-2">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:related rdf:resource="http://data.loterre.fr/ark:/67375/TSP-BPW7VPRL-2"/>
+        <skos:prefLabel xml:lang="fr">myélome</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.loterre.fr/ark:/67375/TSP-WBV2GMLR-W -->
+
+    <owl:NamedIndividual rdf:about="http://data.loterre.fr/ark:/67375/TSP-WBV2GMLR-W">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://data.loterre.fr/ark:/67375/TSP-G104F32J-K"/>
+        <skos:inScheme rdf:resource="http://data.loterre.fr/ark:/67375/TSP"/>
+        <ns0:ns0group xml:lang="fr">Pathologie</ns0:ns0group>
+        <dc11:identifier>28_2_4</dc11:identifier>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-11</terms:modified>
+        <skos:hiddenLabel xml:lang="fr">Détresse respiratoire</skos:hiddenLabel>
+        <skos:prefLabel xml:lang="fr">détresse respiratoire</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://data.loterre.fr/ark:/67375/TSP-WNNP9D20-D -->
+
+    <owl:NamedIndividual rdf:about="http://data.loterre.fr/ark:/67375/TSP-WNNP9D20-D">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://data.loterre.fr/ark:/67375/TSP-BPW7VPRL-2"/>
+        <skos:prefLabel xml:lang="fr">cancer</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/ressource/cavernes -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/ressource/cavernes">
+        <rdf:type rdf:resource="http://dbpedia.org/ressource/Anomalie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/ressource/infiltrats -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/ressource/infiltrats">
+        <rdf:type rdf:resource="http://dbpedia.org/ressource/Anomalie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/ressource/nodule -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/ressource/nodule">
+        <rdf:type rdf:resource="http://dbpedia.org/ressource/Anomalie"/>
+        <rdfs:label>nodule</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/ressource/paroie -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/ressource/paroie">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <skos:inScheme rdf:resource="http://dbpedia.org/ressource/region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/ressource/poumon -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/ressource/poumon">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <skos:inScheme rdf:resource="http://dbpedia.org/ressource/region"/>
+        <rdfs:label>poumon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/ressource/region -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/ressource/region">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://dbpedia.org/ressource/trachée -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/ressource/trachée">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <skos:inScheme rdf:resource="http://dbpedia.org/ressource/region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Adénocarcinome -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Adénocarcinome">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#tumeur"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3/adénocarcinome"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Amaigrissement"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Fatigue"/>
+        <untitled-ontology-3:peutÊtreDétectéPar rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#scanner"/>
+        <untitled-ontology-3:CIM-10>C34</untitled-ontology-3:CIM-10>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Contusion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Contusion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#blessure"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Dyspnée"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Hémoptysies"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Toux"/>
+        <untitled-ontology-3:estSituéDans rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#parenchyme_pulmonaire"/>
+        <untitled-ontology-3:peutEntrainerCommmeComplication rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Détresse_respiratoire"/>
+        <untitled-ontology-3:peutÊtreDétectéPar rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#scanner"/>
+        <untitled-ontology-3:CIM-10>S27.3</untitled-ontology-3:CIM-10>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Coqueluche -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Coqueluche">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#maladie"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Apnée"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Fatigue"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Fièvre"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Rhinorrhée"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Vomissement"/>
+        <untitled-ontology-3:CIM-10>A37</untitled-ontology-3:CIM-10>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Mésothéliome -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Mésothéliome">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#tumeur"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3/mésothéliome"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://dbpedia.org/ressource/nodule"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Amaigrissement"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Fatigue"/>
+        <untitled-ontology-3:estSituéDans rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Plèvre"/>
+        <untitled-ontology-3:peutÊtreDétectéPar rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#scanner"/>
+        <untitled-ontology-3:CIM-10>C45</untitled-ontology-3:CIM-10>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Pneumothorax -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Pneumothorax">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#blessure"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Asymptomatique"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Douleur_pleurétique"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Douleur_thoracique"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Dyspnée"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Douleur_à_l&apos;épaule"/>
+        <untitled-ontology-3:estSituéDans rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Plèvre"/>
+        <untitled-ontology-3:peutÊtreDétectéPar rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#scanner"/>
+        <untitled-ontology-3:CIM-10>J93</untitled-ontology-3:CIM-10>
+        <untitled-ontology-3:CIM-10>P25.1</untitled-ontology-3:CIM-10>
+        <untitled-ontology-3:CIM-10>S25.0</untitled-ontology-3:CIM-10>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Tuberculose -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#Tuberculose">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#maladie"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://dbpedia.org/ressource/cavernes"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://dbpedia.org/ressource/infiltrats"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Amaigrissement"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Fièvre"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Hémoptysies"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Toux"/>
+        <untitled-ontology-3:peutÊtreDétectéPar rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#scanner"/>
+        <untitled-ontology-3:CIM-10>A15</untitled-ontology-3:CIM-10>
+        <untitled-ontology-3:CIM-10>A19</untitled-ontology-3:CIM-10>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Amaigrissement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Amaigrissement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Extérieur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Apnée -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Apnée">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Gêne_respiratoire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Artère_pulmonaire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Artère_pulmonaire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#organe"/>
+        <untitled-ontology-3:faitPartieDe rdf:resource="http://dbpedia.org/ressource/poumon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Asymptomatique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Asymptomatique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Symptômes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Cyanose -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Cyanose">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Extérieur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Douleur_pleurétique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Douleur_pleurétique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Douleur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Douleur_thoracique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Douleur_thoracique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Douleur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Dyspnée -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Dyspnée">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Gêne_respiratoire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Détresse_respiratoire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Détresse_respiratoire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#maladie"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Cyanose"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Dyspnée"/>
+        <untitled-ontology-3:CIM-10>J96.0</untitled-ontology-3:CIM-10>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Embolie_pulmonaire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Embolie_pulmonaire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#maladie"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Douleur_thoracique"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Dyspnée"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Hémoptysies"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Tachycardie"/>
+        <untitled-ontology-3:estSituéDans rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Artère_pulmonaire"/>
+        <untitled-ontology-3:CIM-10>I26</untitled-ontology-3:CIM-10>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Epanchement_pleural -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Epanchement_pleural">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#maladie"/>
+        <untitled-ontology-3:CIM-10>J90</untitled-ontology-3:CIM-10>
+        <untitled-ontology-3:CIM-10>J91</untitled-ontology-3:CIM-10>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Fatigue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Fatigue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Symptômes"/>
+        <rdfs:label>fatigue</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Fièvre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Fièvre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Douleur"/>
+        <rdfs:label>fièvre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Hémoptysies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Hémoptysies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Rejet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Hémothorax -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Hémothorax">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#maladie"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Douleur_thoracique"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Dyspnée"/>
+        <untitled-ontology-3:CIM-10>J94.2</untitled-ontology-3:CIM-10>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Oedème_pulmonaire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Oedème_pulmonaire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#maladie"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Dyspnée"/>
+        <untitled-ontology-3:CIM-10>I50.1</untitled-ontology-3:CIM-10>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Plèvre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Plèvre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#partie_du_poumon"/>
+        <untitled-ontology-3:faitPartieDe rdf:resource="http://dbpedia.org/ressource/poumon"/>
+        <rdfs:label>plèvre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Pneumonie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Pneumonie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#maladie"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Dyspnée"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Fièvre"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Hémoptysies"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Tachypnée"/>
+        <untitled-ontology-3:aPourSymptômes rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Toux"/>
+        <untitled-ontology-3:CIM-10>J12</untitled-ontology-3:CIM-10>
+        <untitled-ontology-3:CIM-10>J13</untitled-ontology-3:CIM-10>
+        <untitled-ontology-3:CIM-10>J14</untitled-ontology-3:CIM-10>
+        <untitled-ontology-3:CIM-10>J15</untitled-ontology-3:CIM-10>
+        <untitled-ontology-3:CIM-10>J16</untitled-ontology-3:CIM-10>
+        <untitled-ontology-3:CIM-10>J17</untitled-ontology-3:CIM-10>
+        <untitled-ontology-3:CIM-10>J18</untitled-ontology-3:CIM-10>
+        <untitled-ontology-3:CIM-10>P23</untitled-ontology-3:CIM-10>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Rhinorrhée -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Rhinorrhée">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Rejet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Tachycardie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Tachycardie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Symptômes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Tachypnée -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Tachypnée">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Gêne_respiratoire"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Toux -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Toux">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Toux"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Toux_grasse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Toux_grasse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Toux"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Toux_sèche -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Toux_sèche">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Toux"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Vomissement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Vomissement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Rejet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#alveole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#alveole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#organe"/>
+        <untitled-ontology-3:faitPartieDe rdf:resource="http://dbpedia.org/ressource/poumon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#bronche -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#bronche">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#organe"/>
+        <untitled-ontology-3:faitPartieDe rdf:resource="http://dbpedia.org/ressource/poumon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#lobe_inférieur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#lobe_inférieur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#lobes_du_poumon"/>
+        <untitled-ontology-3:faitPartieDe rdf:resource="http://dbpedia.org/ressource/poumon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#lobe_moyen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#lobe_moyen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#lobes_du_poumon"/>
+        <untitled-ontology-3:faitPartieDe rdf:resource="http://dbpedia.org/ressource/poumon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#lobe_supérieur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#lobe_supérieur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#lobes_du_poumon"/>
+        <untitled-ontology-3:faitPartieDe rdf:resource="http://dbpedia.org/ressource/poumon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#parenchyme_pulmonaire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#parenchyme_pulmonaire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#partie_du_poumon"/>
+        <untitled-ontology-3:faitPartieDe rdf:resource="http://dbpedia.org/ressource/poumon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#scanner -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#scanner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thoma/ontologies/2021/11/untitled-ontology-3#technique_imagerie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Douleur_à_l&apos;épaule -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Douleur_à_l&apos;épaule">
+        <rdf:type rdf:resource="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3#Douleur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3/adénocarcinome -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3/adénocarcinome">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3/mésothéliome -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/thomas/ontologies/2021/11/untitled-ontology-3/mésothéliome">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
